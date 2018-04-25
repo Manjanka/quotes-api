@@ -1,7 +1,7 @@
 let JSONItems = [];
 let index = Math.floor(Math.random() * (43 + 1));
 
-$.get( "http://quotes.stormconsultancy.co.uk/quotes.json", (data)=>{
+$.get( "https://manjanka.github.io/quotes-api/quotes.json", (data)=>{
   JSONItems = data;
   $(".sentence").html('"' + JSONItems[index]["quote"] + '"');
   $(".author").html(JSONItems[index]["author"]);
